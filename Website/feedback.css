@@ -3,7 +3,7 @@
     width: 300px;
     background: LightSkyBlue; /* Цвет фона */
     color: #363636; /* Цвет текста */
-	font-family: MV Boli;
+	font-family: 'Playfair Display', serif;
     position: fixed; /* Фиксируем на одном месте  */
     min-height: 100px; /* Минимальная высота */
     top: 150px; left: -320px;
