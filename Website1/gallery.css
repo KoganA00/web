@@ -1,0 +1,79 @@
+
+/* Задаем сброс обтекания */
+.clear {
+	margin-top: -1px;
+	height: 1px;
+	clear:both;
+	zoom: 1;
+}		
+/* Slider */
+.slider {
+	
+	width: 1260px; /* Ширина контейнера */
+	margin: 100px auto; /* Внешние тступы сверху и снизу */
+	/* Внутренние отступы для ссылок navy */
+	padding: 0 30px;
+	/* Позиционирование */
+	position: relative;
+	
+	overflow: hidden;/* Скроем то что выходит за границы */
+}
+/* Двойной клик по ссылкам вперед/назад вызывает выделение всех элементов слайдера,
+поэтому предотвращаем это */
+.slider::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+.slider::selection { background: transparent; color: #fff; text-shadow: none; }
+
+.slide-list {
+	position: relative;
+	height:400px;
+	margin: 0;
+	padding: 0;
+	height:400px;
+}
+.slide-wrap {
+	position: relative;
+	background-color:none;
+	height:400px;
+	left: 0px;
+	top: 0;
+	/* максимально возможная ширина обертки слайдера */
+	width: 10000000px;
+}
+.slide-item {
+
+	width: 400px;/* Ширина слайда */
+	height:400px;
+	/* Внутренние отступы */
+	padding: 10px;
+	/* Обтекание */
+	float: left;
+	
+}
+
+.slide-title {
+
+	font-family: 'Playfair Display', serif; 	/* Шрифт!!!!!!!!!!!!!!!!!!! */
+	
+	display: block;/* Указываем, что элемент блочный */
+}
+
+/* навигация вперед/назад */
+.navy {
+	/* абсолютное позиционирование */
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	height: 90%;
+	/* ширина ссылок */
+	width: 30px;
+	cursor: pointer;
+}
+.prev-slide {
+	left: 0;
+	background: #ADD8E6 url(left-arrow.png) 11px 40% no-repeat;
+}
+
+.next-slide {
+	right: 0;
+	background: #ADD8E6 url(right-arrow.png) 13px 40% no-repeat;
+}
