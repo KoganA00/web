@@ -1,0 +1,7 @@
+@font-face {
+    font-family: Zhizn; /* Имя шрифта */
+    src: url(zhizn.otf); /* Путь к файлу со шрифтом */
+   }
+span.quest {font-weight: bold;}
+
+span.titles {font-family: 'Zhizn', serif;}

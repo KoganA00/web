@@ -1,0 +1,22 @@
+body {
+	background-color: #ADD8E6;
+	
+    margin: 30px; 
+   
+}
+@font-face {
+    font-family: Zhizn; /* Имя шрифта */
+    src: url(zhizn.otf); /* Путь к файлу со шрифтом */
+   }
+p 
+{
+    color: #363636;
+	font-family:Zhizn;
+    font-size: 20;
+    }
+h2 
+{
+    color: #363636;
+	font-family:Zhizn;
+   
+    }
